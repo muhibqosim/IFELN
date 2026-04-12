@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- otg -->
-  <meta property="og:image" content="https://muhibqosim.github.io/alhudaa-academy/img/logo.jpg">
+  <meta property="og:image" content="https://muhibqosim.github.io/IFELN/img/logo.png">
   <meta property="og:url" content="https://muhibqosim.github.io/al-hudaa-academy/index.html">
   <!--css link -->
   <link rel="stylesheet" href="css/main.css">
@@ -129,7 +129,7 @@
         <div class="flex justify-between px-2 py-2.5 md:py-6 b-header-bg-colo bg-white my-auto">
           <div class="flex ">
             <div class=" ">
-              <img class="max-h-16 max-w-24 md:h-28 " src="img/logo.jpg" alt="logo" style=" ">
+              <img class="max-h-16 max-w-24 md:h-28 " src="https://i.ibb.co/2YfTXvNt/Ethica-20260406-220446-0000-removebg-preview.png" alt="logo" style=" ">
             </div>
             <!--<h1 class="uppercase leading-5 font-bold my-auto " style="font-family: "> <span class="text-base text-black tracking-tighter md:text-6xl md:tracking-widest"> Al-Hudaa Academy </span> </h1> <!--<br> <span class="text-lg md:text-5xl tracking-wide md:tracking-wi"> Bayero University, Kano </span> -->
           </div>
@@ -215,47 +215,18 @@
         <p class="font-bold text-green-600 text-2xl md:text-4xl mt-1 md:mt- text-center tracking-tight"> Islamic Finance TidBit</p>
         
       </div>
-      <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-64 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
+      
+      <!-- Image Slider Container -->
+      <div class="relative overflow-hidden rounded-sm mt-10 h-54 md:h-[500px] max-w-5xl mx-auto">
+        <div id="gallery-slider" class="flex transition-transform duration-700">
+          <!-- Images will be inserted here dynamically -->
         </div>
-        <div class="flex justify-center items-center pt-4">
-          <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="text-body hover:text-heading group-focus:text-heading">
-              <svg class="rtl:rotate-180 w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4" />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="text-body hover:text-heading group-focus:text-heading">
-              <svg class="rtl:rotate-180 w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
+        
+        
+        <!-- Navigation Buttons -->
+        <div class="md:px-96">
+          <button onclick="prevSlide()" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full md:mx-96 flex items-center justify-center cursor-pointer group focus:outline-none">❮</button>
+          <button onclick="nextSlide()" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full md:mx-96 flex items-center justify-center cursor-pointer group focus:outline-none">❯</button>
         </div>
       </div>
       
@@ -264,7 +235,7 @@
     <!-- About us-->
     <section class="px-4 pb-20 py-20 md:flex md:justify-center bg-white " id="about">
       <div class="px-16 md:px-2 flex justify-center">
-        <img src="img/logo.jpg" class=" h-32" alt="" />
+        <img src="https://i.ibb.co/2YfTXvNt/Ethica-20260406-220446-0000-removebg-preview.png" class=" h-32" alt="" />
       </div>
       <div class=" text-justify ">
         <h1 class="text-gray-900 font-semibold text-xs md:text-4xl mt-8 md:mt-10 text-center"> Who We Are </h1>
@@ -376,7 +347,7 @@
     
     
     <!-- Drop message for us-->
-    <section class="px-2.5 py-14 bg-gray-100 md:flex md:justify-center text-center" id="message-us">
+    <section class="px-2.5 py-14 bg-gray-100  text-center" id="message-us">
       
       <h2 class="font-bold text-green-600 text-sm md:text-2xl mt-3 md:mt-10 tracking-widest"> Contact With Us </h2>
       <p class="text-2xl md:text-4xl mt- md:mt-10 font-bold"> Feel Free to Contact us with Any Enquiry </p>
@@ -402,15 +373,16 @@
   <!-- Footer-->
   <footer class="text-center text-white  bg-gray-900 ">
     <section class="md:flex justfity-center gap-10 ">
-      <div class="mx-2.5  bg-green-600 py-9 px-12 md:px-8" data-aos="fade-">
-        <div class=" ">
-          <img class="h-36 md:h-24 bg-white py-2" src="img/logo.jpg" alt="" />
+      <div class="mx-2.5  bg-green-600 py-9 px-12 md:px-8 md:w-3/6" data-aos="fade-down">
+        <div class="md:flex gap-7 ">
+          <img class="mb-5 h-36 md:h-24 bg-white py-2" src="https://i.ibb.co/2YfTXvNt/Ethica-20260406-220446-0000-removebg-preview.png" alt="" />
+          <p class=" text-justify text-sm "> IFELN is designed to move Islamic Finance from theory to practice, ensuring that youth, startups and entrepreneurs are not merely aware of the sector but are empowered to actively participate in it. </p>
         </div>
-        <div class="text-left mt-5 font-semibold text-white">
-          <p class="text-sm md:text-base mt-3 md-mt8 "> <i class="fas fa-envelope"> </i> &nbsp; &nbsp;guidehmail@gmail.com</p>
-          <p class="text-sm md:text-base mt-3 md-mt8 "> <i class="fas fa-location"> </i> &nbsp; &nbsp; guidehmail@gmail.com</p>
-          <p class="text-sm md:text-base mt-3 md-mt8 "> <i class="fas fa-envelope"> </i> &nbsp; &nbsp;guidehmail@gmail.com</p>
-          <p class="text-sm md:text-base mt-3 md-mt8 "> <i class="fas fa-location"> </i> &nbsp; &nbsp; guidehmail@gmail.com</p>
+        <div class="text-left mt-2.5 font-semibold text-white flex gap-5 text-lg md:text-base">
+          <p class=" mt-3 md-mt8 hover:text-gray-700"> <i class="fab fa-facebook"> </i> <a class="" href="https://www.facebook.com/profile.php?id=100081093176321"></a> </p>
+          <p class=" mt-3 md-mt8 hover:text-gray-700 "> <i class="fab fa-linkedin"> </i> <a class="" href="https://www.linkedin.com/company/islamic-finance-emerging-leaders-initiative/"></a> </p>
+          <p class=" mt-3 md-mt8 hover:text-gray-700"> <i class="fab fa-whatsapp"> </i> <a class="" href="https://whatsapp.com/channel/0029Vb7RlejEAKWCz8WWGA3r"></a> </p>
+          <!--<p class="text-sm md:text-base mt-3 md-mt8 "> <i class="fas fa-location"> </i> </p>-->
         </div>
       </div>
       
@@ -419,20 +391,43 @@
         <h3 class="font-bold text-lg md:text-4xl mb-3"> Quick Links</h3>
         <a href="" class="block mb-3"> About Us </a>
         <a href=" " class="block mb-3"> What We Do</a>
-        <a href=" " class="block mb-3"> Islamic Finance Tips  </a>
+        <a href=" " class="block mb-3"> Islamic Finance Tips </a>
         <a href=" " class="block text-center"> Publications </a>
       </div>
       
-      </section>
-      
-      <!--- copyright-->
-      
-      <div class="text-xs md:text-2xl mt-5 md:mt-10 bg-black py-5 mb-0 pb-0">
-        
-         <i class="fas fa-copyright text-sm "></i> <span id="copyright-year"> </span><a href="index.html" class="text-red-500"> IFELN </a> | All Rights Reserved. | Designed by <a href="https://muhibqosim.com.ng " class="text-red-500"> Al-Qosim</a>
-
-      </div>
+    </section>
+    
+    <!--- copyright-->
+    
+    <div class="text-xs md:text-2xl mt-5 md:mt-10 bg-black py-5 mb-0 pb-1"> <i class="fas fa-copyright text-sm "></i> <span id="copyright-year"> </span><a href="index.html" class="text-red-500"> IFELN </a> | All Rights Reserved. | Designed by <a href="https://muhibqosim.com.ng " class="text-red-500"> Al-Qosim</a></div>
   </footer>
+  
+  <!-- WhatsApp Slide Popup -->
+  <div id="whatsappPopup" class="fixed bottom-6 right-6 bg-white shadow-2xl rounded-2xl p-5 w-[90%] md:w-[350px] transform translate-y-20 opacity-0 transition-all duration-500 z-50">
+    
+    <!-- Close Button -->
+    <button onclick="closePopup()" class="absolute top-2 right-3 text-gray-400 hover:text-red-500 text-lg">
+      &times;
+    </button>
+    
+    <!-- Content -->
+    <h3 class="text-lg font-bold text-green-600 mb-2">
+      Stay Updated 📢
+    </h3>
+    
+    <p class="text-gray-700 text-sm mb-4 leading-relaxed">
+      Want to get everyday updates about Islamic Finance?
+      Subscribe to our WhatsApp channel by clicking below.
+    </p>
+    
+    <!-- Button -->
+    <a href="https://whatsapp.com/channel/0029Vb7RlejEAKWCz8WWGA3r" target="_blank" class="block text-center bg-green-600 text-white py-2 rounded-full font-semibold hover:bg-green-800 transition"> Join WhatsApp Channel </a>
+    
+    <!-- Cancel -->
+    <button onclick="closePopup()" class="mt-3 text-xs text-gray-500 hover:text-red-500">
+      No, thanks
+    </button>
+  </div>
   
   <!-- Project -->
   <script src="js/main.js"></script>
@@ -463,6 +458,35 @@
         }
       }
     });
+  </script>
+  
+  <script>
+    let popupShown = false;
+    
+    window.addEventListener("scroll", function() {
+      
+      // Trigger after scrolling 300px
+      if (window.scrollY > 300 && !popupShown) {
+        
+        // OPTIONAL: show only once per user
+        if (localStorage.getItem("popupShown")) return;
+        
+        const popup = document.getElementById("whatsappPopup");
+        
+        popup.classList.remove("translate-y-20", "opacity-0");
+        popup.classList.add("translate-y-0", "opacity-100");
+        
+        popupShown = true;
+        localStorage.setItem("popupShown", "true");
+      }
+    });
+    
+    function closePopup() {
+      const popup = document.getElementById("whatsappPopup");
+      
+      popup.classList.remove("translate-y-0", "opacity-100");
+      popup.classList.add("translate-y-20", "opacity-0");
+    }
   </script>
   
 </body>
