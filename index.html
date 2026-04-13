@@ -558,34 +558,42 @@
     });
   </script>
   
-  <script>
-    let popupShown = false;
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
     
+    let popupShown = false;
+    let popupClosed = false;
+    const popup = document.getElementById("whatsappPopup");
+    
+    // 🔹 Show on page load (after slight delay)
+    setTimeout(() => {
+      if (!popupClosed) {
+        showPopup();
+      }
+    }, 2000);
+    
+    // 🔹 Also trigger on scroll (fallback)
     window.addEventListener("scroll", function() {
-      
-      // Trigger after scrolling 300px
-      if (window.scrollY > 300 && !popupShown) {
-        
-        // OPTIONAL: show only once per user
-        if (localStorage.getItem("popupShown")) return;
-        
-        const popup = document.getElementById("whatsappPopup");
-        
-        popup.classList.remove("translate-y-20", "opacity-0");
-        popup.classList.add("translate-y-0", "opacity-100");
-        
-        popupShown = true;
-        localStorage.setItem("popupShown", "true");
+      if (window.scrollY > 300 && !popupShown && !popupClosed) {
+        showPopup();
       }
     });
     
-    function closePopup() {
-      const popup = document.getElementById("whatsappPopup");
-      
+    function showPopup() {
+      popup.classList.remove("translate-y-20", "opacity-0");
+      popup.classList.add("translate-y-0", "opacity-100");
+      popupShown = true;
+    }
+    
+    // 🔹 Close function (global)
+    window.closePopup = function() {
       popup.classList.remove("translate-y-0", "opacity-100");
       popup.classList.add("translate-y-20", "opacity-0");
-    }
-  </script>
+      popupClosed = true;
+    };
+    
+  });
+</script>
   
 </body>
 
