@@ -22,7 +22,7 @@ let galleryCurrentIndex = 0;
 // Fetch images from API
 function fetchImages() {
   const url = "https://galleria.sgm.ng/noox9DQsMjHWNRaN9";
-
+  
   fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -52,7 +52,7 @@ function updateGallery() {
     let img = document.createElement("img");
     
     img.src = imageUrl;
-    img.alt = "IFELeNtwork Image";
+    img.alt = "IFELNetwork Tidbit Images";
     
     // Hide image until it fully loads
     img.style.display = "none";
@@ -89,8 +89,7 @@ function nextSlide() {
 function prevSlide() {
   const slides = document.querySelectorAll("#gallery-slider img");
   
-  if (slide
-  s.length <= 1) return;
+  if (slides.length <= 1) return;
   
   slides[galleryCurrentIndex].style.display = "none";
   
@@ -118,8 +117,6 @@ document.addEventListener("DOMContentLoaded", fetchImages);
 /* =========================
    GALLERY ENDS HERE
 ========================= */
-
-
 
 //JS TYPEWR
 
