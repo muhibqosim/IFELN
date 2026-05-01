@@ -21,8 +21,8 @@ let galleryCurrentIndex = 0;
 
 // Fetch images from API
 function fetchImages() {
-  const url = "https://galleria.sgm.ng/cDf3jbbZaDWWvdLT7";
-  
+  const url = "https://galleria.sgm.ng/noox9DQsMjHWNRaN9";
+
   fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -52,7 +52,7 @@ function updateGallery() {
     let img = document.createElement("img");
     
     img.src = imageUrl;
-    img.alt = "Jurivex Gallery Image";
+    img.alt = "IFELeNtwork Image";
     
     // Hide image until it fully loads
     img.style.display = "none";
@@ -89,7 +89,8 @@ function nextSlide() {
 function prevSlide() {
   const slides = document.querySelectorAll("#gallery-slider img");
   
-  if (slides.length <= 1) return;
+  if (slide
+  s.length <= 1) return;
   
   slides[galleryCurrentIndex].style.display = "none";
   
